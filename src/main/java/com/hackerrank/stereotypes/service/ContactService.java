@@ -3,7 +3,10 @@ package com.hackerrank.stereotypes.service;
 import com.hackerrank.stereotypes.model.Person;
 import com.hackerrank.stereotypes.repository.ContactRepository;
 
+@Service
 public class ContactService {
+    
+    @Autowired
     ContactRepository contactRepository;
 
     public Person retrieve(Integer id){
